@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Complaint</title>
+    <link rel="stylesheet" href="missing.css">
+    <!-- <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script> -->
+<style>
+
+</style>
+</head>
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+     <div class="row">
+<div class="topnav" id="myTopnav">
+       <a href="index.html" >Logout</a>
+      <a href="missingperson.html active" class="active">File Missing Person</a>
+       <a href="filecase.html" >File Complaint</a> 
+      <p> Crime Report System</p>
+		</div>
+    <div class="container">  
+   <h3>File Missing Person</h3>
+    <div class="left">
+        <h2>PERSONAL INFORMATION</h2>
+        <br />
+        <form action="https://formspree.io/f/moqyzrzd" method="post">
+        <fieldset>
+    <fieldset>
+         <label>Current Address:<input name="Address" type="text"  id="CurrentAddress" required/></label>   
+    </fieldset>
+     <fieldset>
+         <label>Relation to vicitm:<input  type="text"  id="Relation" required/></label>   
+    </fieldset>
+    <fieldset>
+         <label>Phone Number:<input  type="number"  id="NumberPersonal" required/></label>   
+    </fieldset>
+    </div>
+    <div class="right">
+          <h2>MISSING PERSON INFORMATION</h2>
+         
+          <fieldset>
+         <label>Victim Name:<input  type="text"  id="VictimName" required/></label>   
+    </fieldset>
+    <fieldset>
+       <label>Select Gender</label> 
+      <select id="Gender">
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+							</select>
+    </fieldset>
+    <fieldset>  
+          <label>Select City</label> 
+      <select id="City">
+								<option value="Chennai">Chennai</option>
+								<option value="Coimbatore">Coimbatore</option>
+								<option value="Madurai">Madurai</option>
+								<option value="Salem">Salem</option>
+								<option value="Tirunelveli">Tirunelveli</option>
+								<option value="Erode">Erode</option>
+								<option value="Vellore">Vellore</option>
+								<option value="Kanchipuram">Kanchipuram</option>
+								<option value="ooty">ooty</option>
+								<option value="Theni">Theni</option>
+							</select>
+    </fieldset>
+    <fieldset>
+         <label>Last Seen Address:<input  type="text"  id="VictimAddress" required/></label>   
+    </fieldset>
+      <fieldset>
+         <label>Last Seen Date:<input  type="date"  id="lastseen" required/></label>   
+    </fieldset>
+      <fieldset>
+         <label>Phone Number:<input type="number"  id="NumberVictim"/></label>   
+    </fieldset>
+     <fieldset>
+         <label>Upload Image:<input type="file" value="fileupload" id="file" ></label>
+         <button class="submit2" onclick="upload()">Upload</button>
+    </fieldset>
+    </div>   
+     <button class="submit1" onclick="missingperson()" >File Missing Person</button>
+  </div>
+</form>

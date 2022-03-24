@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complaint</title>
+    <!-- <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script> -->
+    <link rel="stylesheet" href="filecase.css">
+</head>
+<body>
+    <div class="row">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Logout</a>
+            <a href="missingperson.html">File Missing Person</a>
+            <a href="filecase.html" class="active">File Complaint</a>
+            <p> Crime Report System </p>
+        </div>
+        <div class="container">
+            <h3>File Complaint</h3>
+            <h4>Fill the form to File Complaint</h4>
+            <fieldset>
+                <label>Current Address:<input name="Address" type="text" id="CurrentAddress" required /></label>
+            </fieldset>
+            <fieldset>
+                <label>Phone Number:<br><input type="number" id="NumberPersonal" required /></label>
+            </fieldset>
+            <fieldset>
+                <label>Subject:<input type="text" id="Subject" required /></label>
+            </fieldset>
+            <fieldset>
+                <label>Complaint:<textarea placeholder="Type your Complaint" rows="4" cols="50"
+                        id="Complaint"></textarea></label>
+            </fieldset>
+            <button class="submit1" onclick="complaint()">File Complaint</button>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script
+</body>
+</html>
